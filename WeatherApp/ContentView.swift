@@ -39,11 +39,9 @@ struct ContentView: View {
                 Button {
                     print("lalala")
                 } label: {
-                    Text("Change Day Mode")
-                        .frame(width: 200, height: 50)
-                        .background(Color.white)
-                        .font(.system(size:15, weight: .bold, design: .default))
-                        .cornerRadius(10)
+                    WeatherButton(title: "Change Day Mode",
+                    textColor: .blue,
+                    backgroundColor: .white)
                 }
                 Spacer()
             }
